@@ -1,0 +1,19 @@
+# Ferramentas locais do agente
+.agents/
+
+# Caches
+__pycache__/
+*.py[cod]
+
+# Artefatos de revisão visual
+desktop-*.png
+mobile-*.png
+tablet-*.png
+
+# Pacotes de publicação gerados localmente
+Minimali-Hostinger.zip
+
+# Arquivos comuns do sistema/editor
+.DS_Store
+Thumbs.db
+.vscode/

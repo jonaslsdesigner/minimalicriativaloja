@@ -1,0 +1,801 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fe7ebb" />
+    <meta
+      name="description"
+      content="Minimali Criativa: personalizados, papelaria e presentes feitos com carinho para transformar pequenos detalhes em grandes memórias."
+    />
+    <title>Minimali Criativa | Feito para tornar especial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&amp;family=Inter:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/catalog.js" defer></script>
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <div
+      class="announcement"
+      role="region"
+      aria-label="Enviamos para Fortaleza e região. Produtos personalizados com carinho. Atendimento pelo WhatsApp."
+    >
+      <div class="announcement-track" aria-hidden="true">
+        <div class="announcement-group">
+          <span>Enviamos para Fortaleza – CE e região</span>
+          <span>Produtos personalizados com carinho</span>
+          <span>Atendimento pelo WhatsApp</span>
+          <span>Detalhes feitos para tornar momentos especiais</span>
+          <span>Enviamos para Fortaleza – CE e região</span>
+          <span>Produtos personalizados com carinho</span>
+          <span>Atendimento pelo WhatsApp</span>
+          <span>Detalhes feitos para tornar momentos especiais</span>
+        </div>
+        <div class="announcement-group">
+          <span>Enviamos para Fortaleza – CE e região</span>
+          <span>Produtos personalizados com carinho</span>
+          <span>Atendimento pelo WhatsApp</span>
+          <span>Detalhes feitos para tornar momentos especiais</span>
+          <span>Enviamos para Fortaleza – CE e região</span>
+          <span>Produtos personalizados com carinho</span>
+          <span>Atendimento pelo WhatsApp</span>
+          <span>Detalhes feitos para tornar momentos especiais</span>
+        </div>
+      </div>
+    </div>
+    <header class="site-header">
+      <div class="header-main container">
+        <button
+          class="mobile-menu"
+          type="button"
+          aria-label="Abrir menu"
+          aria-controls="main-nav"
+          aria-expanded="false"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+        <a class="brand" href="./" aria-label="Minimali Criativa, início"
+          ><svg class="brand-flower" viewBox="0 0 60 42" aria-hidden="true">
+            <path fill="#48c9ed" d="M29 39C9 39 7 24 8 13c17 0 25 12 21 26Z" />
+            <path
+              fill="#ffd43b"
+              d="M31 39c20 0 22-15 21-26-17 0-25 12-21 26Z"
+            />
+            <path
+              fill="#fe7ebb"
+              d="M30 2c-17 15-15 28 0 38C45 30 47 17 30 2Z"
+            /></svg
+          ><span>Minimali</span><small>C R I A T I V A</small></a
+        >
+        <form class="search-form" role="search">
+          <label class="sr-only" for="search">Buscar produtos</label
+          ><input
+            id="search"
+            name="q"
+            type="search"
+            maxlength="100"
+            enterkeyhint="search"
+            placeholder="O que vamos criar para você?"
+            autocomplete="off"
+          /><button aria-label="Buscar">
+            <svg><use href="#i-search" /></svg>
+          </button>
+        </form>
+        <div class="header-actions">
+          <button
+            class="icon-button account-button"
+            data-info="account"
+            aria-label="Informações sobre minha conta"
+          >
+            <svg><use href="#i-user" /></svg>
+            <span class="action-label">Minha conta</span>
+          </button>
+          <button
+            class="icon-button favorites-button"
+            data-show-favorites
+            aria-label="Ver favoritos"
+          >
+            <svg><use href="#i-heart" /></svg
+            ><span class="action-label"
+              >Favoritos <span data-favorites-count></span
+            ></span></button
+          ><button
+            class="bag-button"
+            data-open-cart
+            aria-label="Abrir sacola, 0 itens"
+          >
+            <span class="bag-icon"
+              ><svg><use href="#i-bag" /></svg
+              ><span data-cart-count>0</span></span
+            ><span class="bag-label"
+              >Sua sacola<small data-cart-total>R$ 0,00</small></span
+            >
+          </button>
+        </div>
+      </div>
+      <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+        <div class="container nav-inner">
+          <a class="active" href="#inicio">Início</a
+          ><a href="#produtos" data-category="all"
+            >Produtos
+            <svg aria-hidden="true"><use href="#i-chevron-down" /></svg></a
+          ><a href="#categories-title"
+            >Temas
+            <svg aria-hidden="true"><use href="#i-chevron-down" /></svg></a
+          ><a href="#como-funciona">Personalizados</a
+          ><a href="#produtos" data-category="lembrancinhas">Lembrancinhas</a
+          ><a href="#produtos" data-category="canecas">Canecas</a
+          ><a href="#produtos" data-category="impressos">Impressos</a
+          ><a href="#contato">Contato</a>
+        </div>
+      </nav>
+    </header>
+    <main id="conteudo" tabindex="-1">
+      <section class="hero" id="inicio" aria-label="Destaques da Minimali">
+        <div class="hero-track">
+          <article class="hero-slide" aria-label="Destaque 1 de 3">
+            <div
+              class="hero-art image-placeholder"
+              style="--placeholder-color: #ffacd0"
+              role="img"
+              aria-label="Placeholder do primeiro banner"
+            >
+              <span class="placeholder-label">PLACEHOLDER</span>
+            </div>
+            <div class="hero-shade"></div>
+            <div class="container hero-inner">
+              <div class="hero-copy">
+                <p class="eyebrow">Personalizados com afeto</p>
+                <h1>Pequenos detalhes.<br />Grandes <em>memórias.</em></h1>
+                <p>
+                  Um nome, uma ideia, uma ocasião especial.<br /> A gente
+                  transforma em algo só seu.
+                </p>
+                <a class="button" href="#produtos"
+                  >Encontre seu próximo mimo <svg><use href="#i-arrow" /></svg
+                ></a>
+                <div class="hero-note">
+                  <span class="tiny-flower">✳</span> Criado com carinho. Feito
+                  para encantar.
+                </div>
+              </div>
+            </div>
+          </article>
+          <article
+            class="hero-slide"
+            aria-label="Destaque 2 de 3"
+            aria-hidden="true"
+            inert
+          >
+            <div
+              class="hero-art image-placeholder"
+              style="--placeholder-color: #9ee5f7"
+              role="img"
+              aria-label="Placeholder do segundo banner"
+            >
+              <span class="placeholder-label">PLACEHOLDER</span>
+            </div>
+            <div class="hero-shade hero-shade-blue"></div>
+            <div class="container hero-inner">
+              <div class="hero-copy">
+                <p class="eyebrow">Presentes com significado</p>
+                <h1>Carinho que ganha<br /><em>forma e cor.</em></h1>
+                <p>
+                  Canecas, papelaria e lembranças pensadas<br /> para fazer
+                  alguém se sentir especial.
+                </p>
+                <a class="button" href="#produtos" data-category="canecas"
+                  >Descubra os presentes <svg><use href="#i-arrow" /></svg
+                ></a>
+                <div class="hero-note">
+                  <span class="tiny-flower">✳</span> Uma ideia sua. Um presente
+                  único.
+                </div>
+              </div>
+            </div>
+          </article>
+          <article
+            class="hero-slide"
+            aria-label="Destaque 3 de 3"
+            aria-hidden="true"
+            inert
+          >
+            <div
+              class="hero-art image-placeholder"
+              style="--placeholder-color: #ffe394"
+              role="img"
+              aria-label="Placeholder do terceiro banner"
+            >
+              <span class="placeholder-label">PLACEHOLDER</span>
+            </div>
+            <div class="hero-shade hero-shade-yellow"></div>
+            <div class="container hero-inner">
+              <div class="hero-copy">
+                <p class="eyebrow">Celebre do seu jeitinho</p>
+                <h1>Sua festa começa<br />nos <em>detalhes.</em></h1>
+                <p>
+                  Topos, lembrancinhas e personalizados<br /> que deixam cada
+                  comemoração com a sua cara.
+                </p>
+                <a class="button" href="#produtos" data-category="topos"
+                  >Comece a personalizar <svg><use href="#i-arrow" /></svg
+                ></a>
+                <div class="hero-note">
+                  <span class="tiny-flower">✳</span> Feito para celebrar
+                  histórias reais.
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="hero-slide hero-clone" aria-hidden="true" inert>
+            <div
+              class="hero-art image-placeholder"
+              style="--placeholder-color: #ffacd0"
+            >
+              <span class="placeholder-label">PLACEHOLDER</span>
+            </div>
+            <div class="hero-shade"></div>
+            <div class="container hero-inner">
+              <div class="hero-copy">
+                <p class="eyebrow">Personalizados com afeto</p>
+                <h1>Pequenos detalhes.<br />Grandes <em>memórias.</em></h1>
+                <p>
+                  Um nome, uma ideia, uma ocasião especial.<br /> A gente
+                  transforma em algo só seu.
+                </p>
+                <a class="button" href="#produtos" tabindex="-1"
+                  >Encontre seu próximo mimo <svg><use href="#i-arrow" /></svg
+                ></a>
+                <div class="hero-note">
+                  <span class="tiny-flower">✳</span> Criado com carinho. Feito
+                  para encantar.
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <button
+          class="hero-arrow hero-arrow-prev"
+          type="button"
+          data-hero-direction="prev"
+          aria-label="Exibir banner anterior"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m15 5-7 7 7 7" />
+          </svg>
+        </button>
+        <button
+          class="hero-arrow hero-arrow-next"
+          type="button"
+          data-hero-direction="next"
+          aria-label="Exibir próximo banner"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m9 5 7 7-7 7" />
+          </svg>
+        </button>
+        <div class="hero-dots" role="group" aria-label="Escolher banner">
+          <button
+            class="active"
+            data-hero-slide="0"
+            aria-label="Exibir banner 1"
+            aria-pressed="true"
+          ></button>
+          <button
+            data-hero-slide="1"
+            aria-label="Exibir banner 2"
+            aria-pressed="false"
+          ></button>
+          <button
+            data-hero-slide="2"
+            aria-label="Exibir banner 3"
+            aria-pressed="false"
+          ></button>
+        </div>
+      </section>
+      <section
+        class="categories section container"
+        aria-labelledby="categories-title"
+      >
+        <div class="section-heading centered">
+          <p class="eyebrow">Um mundo de possibilidades</p>
+          <h2 id="categories-title">O que combina com seu momento?</h2>
+        </div>
+        <div class="category-grid">
+          <a href="#produtos" class="category" data-category="topos"
+            ><span class="category-icon pink"
+              ><span class="category-placeholder">PLACEHOLDER</span></span
+            ><span>Topos de bolo</span
+            ><small>Uma festa com a sua cara</small></a
+          >
+          <a href="#produtos" class="category" data-category="canecas"
+            ><span class="category-icon blue"
+              ><span class="category-placeholder">PLACEHOLDER</span></span
+            ><span>Canecas</span><small>Carinho em cada gole</small></a
+          >
+          <a href="#produtos" class="category" data-category="lembrancinhas"
+            ><span class="category-icon yellow"
+              ><span class="category-placeholder">PLACEHOLDER</span></span
+            ><span>Lembrancinhas</span><small>Para guardar na memória</small></a
+          >
+          <a href="#produtos" class="category" data-category="papelaria"
+            ><span class="category-icon lilac"
+              ><span class="category-placeholder">PLACEHOLDER</span></span
+            ><span>Papelaria</span><small>Ideias que ganham forma</small></a
+          >
+          <a href="#produtos" class="category" data-category="impressos"
+            ><span class="category-icon green"
+              ><span class="category-placeholder">PLACEHOLDER</span></span
+            ><span>Impressos</span><small>Seu toque em cada detalhe</small></a
+          >
+          <a href="#como-funciona" class="category"
+            ><span class="category-icon peach"
+              ><span class="category-placeholder">PLACEHOLDER</span></span
+            ><span>Do seu jeitinho</span
+            ><small>Vamos criar algo único?</small></a
+          >
+        </div>
+      </section>
+      <section class="feature-grid container" aria-label="Coleções em destaque">
+        <a class="feature feature-mugs" href="#produtos" data-category="canecas"
+          ><div
+            class="feature-photo image-placeholder"
+            style="--placeholder-color: #ff9fc7"
+          >
+            <span class="placeholder-label">PLACEHOLDER</span>
+          </div>
+          <div class="feature-copy">
+            <p class="eyebrow">Um presente, mil sorrisos</p>
+            <h2>Afeto que cabe<br />numa caneca.</h2>
+            <span class="text-link"
+              >Encontre a sua <svg><use href="#i-arrow" /></svg
+            ></span></div></a
+        ><a
+          class="feature feature-paper"
+          href="#produtos"
+          data-category="papelaria"
+          ><div
+            class="feature-photo image-placeholder"
+            style="--placeholder-color: #9ee5f7"
+          >
+            <span class="placeholder-label">PLACEHOLDER</span>
+          </div>
+          <div class="feature-copy">
+            <p class="eyebrow">Sua ideia no papel</p>
+            <h2>Detalhes que<br />fazem a diferença.</h2>
+            <span class="text-link"
+              >Explore a papelaria <svg><use href="#i-arrow" /></svg
+            ></span></div
+        ></a>
+      </section>
+      <section
+        class="products-section section container"
+        id="produtos"
+        aria-labelledby="products-title"
+      >
+        <div class="section-heading centered">
+          <p class="eyebrow">Escolhidos para encantar</p>
+          <h2 id="products-title">
+            Pequenos mimos, muito carinho <span class="heading-heart">♡</span>
+          </h2>
+          <p>Descubra um favorito e deixe o resto com a gente.</p>
+        </div>
+        <div class="catalog-toolbar">
+          <div
+            class="product-tabs"
+            role="group"
+            aria-label="Seleção de produtos"
+          >
+            <button class="selected" data-tab="all" aria-pressed="true">
+              Ver todos
+            </button>
+            <button data-tab="featured" aria-pressed="false">
+              Queridinhos
+            </button>
+            <button data-tab="new" aria-pressed="false">Novidades</button>
+          </div>
+          <div class="catalog-selects">
+            <label class="category-control" for="category-select"
+              >Categoria
+              <select id="category-select">
+                <option value="all">Todas as categorias</option>
+                <option value="topos">Topos de bolo</option>
+                <option value="canecas">Canecas</option>
+                <option value="papelaria">Papelaria</option>
+                <option value="lembrancinhas">Lembrancinhas</option>
+                <option value="impressos">Impressos</option>
+              </select>
+            </label>
+            <label class="sort-control"
+              ><span>Ordenar por</span
+              ><select id="sort">
+                <option value="default">Seleção Minimali</option>
+                <option value="price-asc">Menor preço</option>
+                <option value="price-desc">Maior preço</option>
+                <option value="name">Nome: A–Z</option>
+              </select></label
+            >
+          </div>
+        </div>
+        <p
+          class="results-count"
+          id="results-count"
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+        ></p>
+        <div class="filter-status" hidden>
+          <p id="filter-label"></p>
+          <button class="text-link" id="clear-filters">
+            Limpar filtros <span>×</span>
+          </button>
+        </div>
+        <div class="product-grid" id="product-grid"></div>
+        <noscript
+          ><p class="no-script">
+            Ative o JavaScript do navegador para explorar os produtos e montar
+            sua sacola.
+          </p></noscript
+        >
+        <div class="empty-state" id="empty-state" hidden>
+          <svg><use href="#i-search" /></svg>
+          <h3 id="empty-title">Nenhum mimo por aqui ainda.</h3>
+          <p id="empty-description">
+            Experimente outro termo ou explore todos os produtos.
+          </p>
+          <button class="button button-light" data-reset>
+            Ver todos os produtos
+          </button>
+        </div>
+        <p class="catalog-note">
+          Uma prévia do nosso universo criativo. Produtos e valores
+          demonstrativos.
+        </p>
+      </section>
+      <section class="custom-banner">
+        <div
+          class="custom-image image-placeholder"
+          style="--placeholder-color: #d9b5ff"
+          role="img"
+          aria-label="Placeholder da imagem de personalização"
+        >
+          <span class="placeholder-label">PLACEHOLDER</span>
+        </div>
+        <div class="custom-content">
+          <p class="eyebrow">Imaginou? A gente cria.</p>
+          <h2>Seu tema. Sua história.<br /><em>Um toque Minimali.</em></h2>
+          <p>
+            Do primeiro mesversário àquele presente especial.<br />Tem sempre um
+            jeito de deixar o momento mais seu.
+          </p>
+          <a href="#como-funciona" class="button"
+            >Quero personalizar <svg><use href="#i-arrow" /></svg
+          ></a>
+        </div>
+        <span class="custom-flower" aria-hidden="true">✳</span>
+      </section>
+      <section class="how-section section container" id="como-funciona">
+        <div class="section-heading centered">
+          <p class="eyebrow">Simples, leve e cheio de afeto</p>
+          <h2>Do seu sonho para as suas mãos</h2>
+        </div>
+        <div class="steps">
+          <article>
+            <span>01</span>
+            <div>
+              <h3>Escolha seu mimo</h3>
+              <p>
+                Encontre o produto que combina com a sua ocasião e abra os
+                detalhes.
+              </p>
+            </div>
+          </article>
+          <article>
+            <span>02</span>
+            <div>
+              <h3>Deixe com a sua cara</h3>
+              <p>
+                Conte o nome, o tema e as cores que você imaginou para a
+                personalização.
+              </p>
+            </div>
+          </article>
+          <article>
+            <span>03</span>
+            <div>
+              <h3>Guarde esse carinho</h3>
+              <p>
+                Adicione à sacola para reunir suas ideias. A loja estará
+                recebendo pedidos em breve.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <div class="benefits">
+        <div class="container benefits-inner">
+          <div>
+            <svg><use href="#i-heart" /></svg
+            ><span
+              ><strong>Feito com carinho</strong
+              ><small>Cuidado em cada detalhe</small></span
+            >
+          </div>
+          <div>
+            <svg><use href="#i-sparkles" /></svg
+            ><span
+              ><strong>Do seu jeitinho</strong
+              ><small>Personalização para sua ocasião</small></span
+            >
+          </div>
+          <div>
+            <svg><use href="#i-pin" /></svg
+            ><span
+              ><strong>De Fortaleza, com amor</strong
+              ><small>Para celebrar perto de você</small></span
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="contato">
+      <div class="container footer-main">
+        <div class="footer-about">
+          <a class="brand footer-brand" href="#inicio"
+            ><span>Minimali</span><small>C R I A T I V A</small></a
+          >
+          <p>
+            Personalizados feitos com afeto para transformar pequenos detalhes
+            em memórias que ficam.
+          </p>
+          <div class="social-links" aria-label="Redes sociais da Minimali">
+            <button data-info="social" aria-label="Facebook da Minimali">
+              <svg aria-hidden="true"><use href="#i-facebook" /></svg>
+            </button>
+            <button data-info="social" aria-label="Instagram da Minimali">
+              <svg aria-hidden="true"><use href="#i-instagram" /></svg>
+            </button>
+            <button data-info="social" aria-label="TikTok da Minimali">
+              <svg aria-hidden="true"><use href="#i-tiktok" /></svg>
+            </button>
+            <button data-info="whatsapp" aria-label="WhatsApp da Minimali">
+              <svg aria-hidden="true"><use href="#i-whatsapp" /></svg>
+            </button>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Categorias</h3>
+          <a href="#produtos" data-category="topos">Topos de bolo</a
+          ><a href="#produtos" data-category="canecas">Canecas personalizadas</a
+          ><a href="#produtos" data-category="papelaria"
+            >Papelaria personalizada</a
+          ><a href="#produtos" data-category="lembrancinhas">Lembrancinhas</a
+          ><a href="#produtos" data-category="impressos">Impressos</a>
+        </div>
+        <div class="footer-column">
+          <h3>Links rápidos</h3>
+          <a href="#inicio">Início</a
+          ><a href="#produtos" data-category="all">Produtos</a
+          ><button data-open-cart>Sua sacola</button
+          ><button data-info="account">Minha conta</button
+          ><a href="#como-funciona">Como personalizar</a
+          ><button data-info="delivery">Produção e entrega</button
+          ><button data-info="privacy">Privacidade</button>
+        </div>
+        <div class="footer-newsletter">
+          <h3>Newsletter</h3>
+          <p>
+            Receba novidades, ideias e lançamentos da Minimali diretamente no
+            seu e-mail.
+          </p>
+          <form class="newsletter-form">
+            <label class="sr-only" for="newsletter-email">Seu e-mail</label>
+            <input
+              id="newsletter-email"
+              type="email"
+              autocomplete="email"
+              placeholder="Seu e-mail"
+              required
+            />
+            <button type="submit">Assinar</button>
+          </form>
+          <button class="footer-contact-link" data-info="whatsapp">
+            <span
+              ><svg aria-hidden="true"><use href="#i-whatsapp" /></svg
+            ></span>
+            WhatsApp para pedidos
+          </button>
+          <p class="footer-location">Fortaleza – Ceará</p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span
+          >© <span id="year">2026</span> Minimali Criativa. Todos os direitos
+          reservados.</span
+        >
+        <nav aria-label="Links legais">
+          <button data-info="privacy">Privacidade</button>
+          <button data-info="terms">Termos</button>
+          <a href="#inicio">Mapa do site</a>
+        </nav>
+      </div>
+    </footer>
+    <button
+      class="whatsapp-float"
+      data-info="whatsapp"
+      aria-label="Falar com a Minimali pelo WhatsApp"
+    >
+      <svg aria-hidden="true"><use href="#i-whatsapp" /></svg>
+    </button>
+    <dialog
+      class="product-dialog"
+      id="product-dialog"
+      aria-labelledby="dialog-title"
+    >
+      <button
+        class="icon-button dialog-close"
+        data-close-product
+        aria-label="Fechar detalhes"
+      >
+        <svg><use href="#i-close" /></svg>
+      </button>
+      <div id="product-details"></div>
+    </dialog>
+    <dialog class="cart-dialog" id="cart-dialog" aria-labelledby="cart-title">
+      <div class="cart-header">
+        <div>
+          <p class="eyebrow">Seus próximos mimos</p>
+          <h2 id="cart-title">Sua sacola <span>♡</span></h2>
+        </div>
+        <button class="icon-button" data-close-cart aria-label="Fechar sacola">
+          <svg><use href="#i-close" /></svg>
+        </button>
+      </div>
+      <div id="cart-items"></div>
+      <div class="cart-bottom" id="cart-bottom">
+        <div class="cart-total">
+          <span>Subtotal</span><strong data-cart-total>R$ 0,00</strong>
+        </div>
+        <p>Valores demonstrativos. Frete e prazo ainda não calculados.</p>
+        <button class="button" id="review-order">
+          Revisar minha seleção <svg><use href="#i-arrow" /></svg>
+        </button>
+        <button
+          class="button button-light continue-shopping"
+          data-continue-shopping
+        >
+          Continuar escolhendo
+        </button>
+        <p class="cart-disclaimer">
+          A loja está em preparação. Nenhuma compra ou cobrança será realizada.
+        </p>
+      </div>
+    </dialog>
+    <dialog class="info-dialog" id="info-dialog" aria-labelledby="info-title">
+      <button
+        class="icon-button dialog-close"
+        data-close-info
+        aria-label="Fechar"
+      >
+        <svg><use href="#i-close" /></svg>
+      </button>
+      <p class="eyebrow">Minimali Criativa</p>
+      <h2 id="info-title"></h2>
+      <div id="info-content"></div>
+      <button class="button" id="back-to-cart" hidden>
+        Voltar à sacola <svg><use href="#i-bag" /></svg>
+      </button>
+      <button class="button button-light" id="info-dismiss" data-close-info>
+        Entendi <span>♡</span>
+      </button>
+    </dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <svg class="svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <symbol id="i-search" viewBox="0 0 24 24">
+          <circle cx="10.5" cy="10.5" r="6.5" />
+          <path d="m16 16 5 5" />
+        </symbol>
+        <symbol id="i-heart" viewBox="0 0 24 24">
+          <path
+            d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"
+          />
+        </symbol>
+        <symbol id="i-bag" viewBox="0 0 24 24">
+          <path d="M5 7h14l1 14H4L5 7Z M8 8V6a4 4 0 0 1 8 0v2" />
+        </symbol>
+        <symbol id="i-arrow" viewBox="0 0 24 24">
+          <path d="M4 12h16m-6-6 6 6-6 6" />
+        </symbol>
+        <symbol id="i-chevron-down" viewBox="0 0 24 24">
+          <path d="m7 9.5 5 5 5-5" />
+        </symbol>
+        <symbol id="i-close" viewBox="0 0 24 24">
+          <path d="m6 6 12 12M6 18 18 6" />
+        </symbol>
+        <symbol id="i-user" viewBox="0 0 24 24">
+          <circle cx="12" cy="7" r="4" />
+          <path d="M4.5 21a7.5 7.5 0 0 1 15 0" />
+        </symbol>
+        <symbol id="i-truck" viewBox="0 0 24 24">
+          <path d="M3 6h11v11H3zM14 10h4l3 3v4h-7z" />
+          <circle cx="7" cy="19" r="2" />
+          <circle cx="18" cy="19" r="2" />
+        </symbol>
+        <symbol id="i-whatsapp" viewBox="0 0 24 24">
+          <path
+            fill="currentColor"
+            stroke="none"
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479s1.065 2.875 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.9 6.994c-.003 5.45-4.437 9.884-9.888 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"
+          />
+        </symbol>
+        <symbol id="i-facebook" viewBox="0 0 24 24">
+          <path
+            fill="currentColor"
+            stroke="none"
+            d="M14 8h3V4.2c-.5-.1-2.1-.2-4-.2-3.9 0-6.5 2.3-6.5 6.7V14H3v4.3h3.5V24h4.3v-5.7h3.6L15 14h-4.2v-2.9C10.8 9.8 11.2 8 14 8Z"
+          />
+        </symbol>
+        <symbol id="i-instagram" viewBox="0 0 24 24">
+          <rect x="3" y="3" width="18" height="18" rx="5" />
+          <circle cx="12" cy="12" r="4" />
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+        </symbol>
+        <symbol id="i-tiktok" viewBox="0 0 24 24">
+          <path d="M14 4v11.2a4.7 4.7 0 1 1-4-4.6M14 4c.7 3 2.4 4.8 5 5" />
+        </symbol>
+        <symbol id="i-cake" viewBox="0 0 40 40">
+          <path
+            d="M7 25h26v11H7zM10 25v-8h20v8M14 17v-5m6 5v-5m6 5v-5M5 36h30M8 29q3 5 6 0 3 5 6 0 3 5 6 0 3 5 6 0"
+          />
+          <path
+            d="M14 9c-3-1-1-4 0-5 2 2 2 4 0 5Zm6 0c-3-1-1-4 0-5 2 2 2 4 0 5Zm6 0c-3-1-1-4 0-5 2 2 2 4 0 5Z"
+          />
+        </symbol>
+        <symbol id="i-cup" viewBox="0 0 40 40">
+          <path
+            d="M7 9h22v20a6 6 0 0 1-6 6H13a6 6 0 0 1-6-6V9Zm22 4h4c8 0 8 15 0 15h-4M12 4v1m6-1v1m6-1v1"
+          />
+        </symbol>
+        <symbol id="i-gift" viewBox="0 0 40 40">
+          <path
+            d="M6 17h28v7H6zM9 24v12h22V24M20 17v19M20 17C0 17 9-3 20 17Zm0 0C40 17 31-3 20 17Z"
+          />
+        </symbol>
+        <symbol id="i-paper" viewBox="0 0 40 40">
+          <path d="M10 5h24v28H10zM6 9v28h24M15 12h14M15 18h14M15 24h9" />
+        </symbol>
+        <symbol id="i-print" viewBox="0 0 40 40">
+          <path
+            d="M11 15V5h18v10M11 29H5V15h30v14h-6M11 24h18v12H11zM26 20h4M15 29h10M15 32h10"
+          />
+        </symbol>
+        <symbol id="i-sparkles" viewBox="0 0 40 40">
+          <path
+            d="m21 8 4 11 11 4-11 4-4 11-4-11-11-4 11-4 4-11ZM8 3l2 5 5 2-5 2-2 5-2-5-5-2 5-2 2-5Zm23 0v8m-4-4h8"
+          />
+        </symbol>
+        <symbol id="i-pin" viewBox="0 0 24 24">
+          <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z" />
+          <circle cx="12" cy="10" r="3" />
+        </symbol>
+        <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14" /></symbol>
+        <symbol id="i-plus" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5v14" />
+        </symbol>
+        <symbol id="i-trash" viewBox="0 0 24 24">
+          <path d="M3 6h18M9 6V3h6v3M5 6l1 15h12l1-15M10 10v7m4-7v7" />
+        </symbol>
+      </defs>
+    </svg>
+  </body>
+</html>
