@@ -29,10 +29,12 @@ O catálogo de `js/catalog.js` contém exemplos e valores demonstrativos baseado
 
 Não existe checkout real, cobrança, cadastro, autenticação ou envio de pedido. Nenhum telefone, prazo de entrega ou política comercial foi inventado. A revisão da sacola informa explicitamente que os pedidos ainda não estão disponíveis.
 
-## Integração futura com Supabase
+## Integração com Supabase
 
-Nenhuma conexão com banco foi feita e não há chaves ou dependências do Supabase nesta etapa. `js/catalog.js` centraliza os dados; `js/app.js` concentra busca, filtros, favoritos e sacola; `css/styles.css` contém a identidade visual e a responsividade.
+O catálogo é carregado da tabela `public.products` do Supabase por `js/supabase.js`, usando somente a chave publicável. A tabela tem RLS habilitado: visitantes podem ler apenas produtos ativos e não podem cadastrar, editar ou excluir registros.
 
-Na próxima etapa, os produtos podem vir do PostgreSQL, as imagens do Storage e as contas do Auth. A precificação final, estoque, envio e criação de pedidos precisarão de validação no backend; valores do navegador não devem autorizar cobranças. Planejar as políticas RLS antes de habilitar acesso aos dados e nunca incluir a chave `service_role` no frontend.
+`js/catalog.js` permanece como contingência para manter a vitrine disponível se a API estiver temporariamente indisponível. A migração versionada está em `supabase/migrations/`.
+
+A precificação final, estoque, envio e criação de pedidos ainda precisarão de validação no backend; valores enviados pelo navegador nunca devem autorizar cobranças. A chave `service_role` não deve ser incluída no frontend.
 
 Antes do lançamento comercial, confirmar catálogo, fotos, preços, dados de contato, modalidades de personalização, frete, prazos, políticas e fluxo de pagamento.

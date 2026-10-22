@@ -1,6 +1,7 @@
-(() => {
+(async () => {
   "use strict";
-  const products = window.MINIMALI_PRODUCTS;
+  const products = await (window.MINIMALI_PRODUCTS_READY ??
+    Promise.resolve(window.MINIMALI_PRODUCTS));
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [
     ...root.querySelectorAll(selector),
