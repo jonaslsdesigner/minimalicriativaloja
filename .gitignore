@@ -17,3 +17,6 @@ Minimali-Hostinger.zip
 .DS_Store
 Thumbs.db
 .vscode/
+
+# Estado local da CLI do Supabase
+supabase/.temp/
